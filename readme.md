@@ -6,3 +6,10 @@ created from these resources:
 - images
 - template.html
 - node_modules/@karuga/karuga-jsonresume
+
+deployment
+
+```bash
+cd dist
+now --prod
+```
