@@ -9,7 +9,7 @@ const templates = { de: templateDe, en: templateEn };
 
 // create index.html
 const indexContent = fs.readFileSync("pages/aboutme_en.html", "utf-8");
-const fullPage = templateDe.replace("{{content}}", indexContent);
+const fullPage = templates.en.replace("{{content}}", indexContent);
 fs.writeFileSync("dist/index.html", fullPage);
 
 // create pages from ./pages/
