@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build": "node scripts/build.js"
+  },
+  "dependencies": {
+    "@karuga/karuga-jsonresume": "^2.0.0",
+    "fs-extra": "^8.1.0"
+  }
+}
