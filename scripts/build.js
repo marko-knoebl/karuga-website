@@ -15,10 +15,23 @@ fs.writeFileSync("dist/index.html", fullPage);
 // create pages from ./pages/
 const pagenames = fs.readdirSync("pages");
 for (let pagename of pagenames) {
-  const lang = pagename.slice(pagename.length - 7, pagename.length - 5);
-  const pagecontent = fs.readFileSync(`pages/${pagename}`, "utf-8");
-  const fullPage = templates[lang].replace("{{content}}", pagecontent);
-  fs.writeFileSync(`dist/${pagename}`, fullPage);
+  let lang = pagename.slice(pagename.length - 7, pagename.length - 5);
+  if (lang !== "de") {
+    lang = "en";
+  }
+  try {
+    const pagecontent = fs.readFileSync(`pages/${pagename}`, "utf-8");
+    const fullPage = templates[lang].replace("{{content}}", pagecontent);
+    fs.writeFileSync(`dist/${pagename}`, fullPage);
+  } catch {
+    const pagecontent = fs.readFileSync(
+      `pages/${pagename}/index.html`,
+      "utf-8"
+    );
+    const fullPage = templates[lang].replace("{{content}}", pagecontent);
+    fs.mkdirSync(`dist/${pagename}`);
+    fs.writeFileSync(`dist/${pagename}/index.html`, fullPage);
+  }
 }
 
 // create articles from ./articles/
