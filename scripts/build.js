@@ -29,7 +29,9 @@ for (let pagename of pagenames) {
       "utf-8"
     );
     const fullPage = templates[lang].replace("{{content}}", pagecontent);
-    fs.mkdirSync(`dist/${pagename}`);
+    if (!fs.existsSync(`dist/${pagename}`)) {
+      fs.mkdirSync(`dist/${pagename}`);
+    }
     fs.writeFileSync(`dist/${pagename}/index.html`, fullPage);
   }
 }
