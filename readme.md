@@ -10,6 +10,7 @@ created from these resources:
 deployment
 
 ```bash
+npm run build
 cd dist
 now --prod
 ```
