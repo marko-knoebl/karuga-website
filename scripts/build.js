@@ -1,7 +1,6 @@
 const fs = require("fs");
 const fsExtra = require("fs-extra");
 
-//const template = fs.readFileSync("template.html", "utf-8");
 const templateDe = fs.readFileSync("template_de.html", "utf-8");
 const templateEn = fs.readFileSync("template_en.html", "utf-8");
 
