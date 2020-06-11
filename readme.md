@@ -12,5 +12,5 @@ deployment
 ```bash
 npm run build
 cd dist
-now --prod
+vercel --prod
 ```
