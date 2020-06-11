@@ -9,8 +9,4 @@ created from these resources:
 
 deployment
 
-```bash
-npm run build
-cd dist
-vercel --prod
-```
+push to master to deploy; see vercel.com
