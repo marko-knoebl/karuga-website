@@ -1,114 +1,119 @@
-<h1>Software<wbr />entwicklung</h1>
+﻿<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marko KnÃ¶bl â€“ Softwareentwicklung</title>
+    <link rel="stylesheet" href="https://ka-f.webawesome.com/webawesome@3.9.0/styles/webawesome.css" />
+    <script type="module" src="https://ka-f.webawesome.com/webawesome@3.9.0/webawesome.loader.js"></script>
+    <script type="module" src="../components/site-nav.js"></script>
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <site-nav lang="de" page="programming" root=".."></site-nav>
+    <main class="container">
+      <h1>Software<wbr />entwicklung</h1>
 
-<h2>Haupttechnologien</h2>
+      <h2>Haupttechnologien</h2>
 
-<ul>
-  <li>Python</li>
-  <li>JavaScript</li>
-  <li>React.js</li>
-  <li>three.js</li>
-  <li>NumPy, Pandas, scikit-learn, ...</li>
-  <li>mathematische Algorithmen</li>
-</ul>
+      <ul>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>React.js</li>
+        <li>three.js</li>
+        <li>NumPy, Pandas, scikit-learn, ...</li>
+        <li>mathematische Algorithmen</li>
+      </ul>
 
-<h2>Portfolio</h2>
+      <h2>Portfolio</h2>
 
-<div class="row">
-  <div class="col-sm-6 col-md-3">
-    <div class="img-thumbnail mb-4">
-      <img class="img-fluid mb-4" src="images/cck-cutter-mirrored.png" />
-      <div class="caption m-2">
-        <h3>Cookie Cutter Customizer</h3>
-        <p>
-          Ein Projekt für das Startup <em>Cookie Cutter Kingdom</em>: Erstellung
-          einer web-basierten 3D-Vorschau für individualisierte, 3D-gedruckte
-          Keksausstecher. Die Ausstecher können mit einem persönlichen Text
-          versehen oder auch aus einem vom Benutzer bereitgestellten Bild
-          erstellt werden. Hierzu entwickelte ich auch ein SVG-basiertes
-          Zeichenwerkzeug, das im engültigen Produkt aber nicht Verwendung fand.
-        </p>
-        <p>
-          <a href="http://www.cookiecutterkdom.com/">Website</a><br />
-          <a
-            href="http://www.cookiecutterkdom.com/collections/customizer/products/heart-cutter?variant=1391212545"
-            >Beispiel: Herzform</a
-          >
-        </p>
+      <div class="portfolio-grid">
+        <wa-card>
+          <img slot="media" src="../images/cck-cutter-mirrored.png" alt="Cookie Cutter Customizer" />
+          <div class="card-body">
+            <h3>Cookie Cutter Customizer</h3>
+            <p>
+              Ein Projekt fÃ¼r das Startup <em>Cookie Cutter Kingdom</em>: Erstellung
+              einer web-basierten 3D-Vorschau fÃ¼r individualisierte, 3D-gedruckte
+              Keksausstecher. Die Ausstecher kÃ¶nnen mit einem persÃ¶nlichen Text
+              versehen oder auch aus einem vom Benutzer bereitgestellten Bild
+              erstellt werden. Hierzu entwickelte ich auch ein SVG-basiertes
+              Zeichenwerkzeug, das im endgÃ¼ltigen Produkt aber nicht Verwendung fand.
+            </p>
+            <p>
+              <a href="http://www.cookiecutterkdom.com/">Website</a><br />
+              <a href="http://www.cookiecutterkdom.com/collections/customizer/products/heart-cutter?variant=1391212545">Beispiel: Herzform</a>
+            </p>
+          </div>
+        </wa-card>
+
+        <wa-card>
+          <img slot="media" src="../images/kontobuch-piechart.png" alt="Kontobuch" />
+          <div class="card-body">
+            <h3>Kontobuch</h3>
+            <p>
+              Ein Finanzassistent, um Ausgaben und Einnahmen auf Ã¶sterreichischen
+              Bankkonten im Auge zu behalten.
+            </p>
+            <p>
+              Kategorisiert Buchungen automatisch und visualisiert sie in
+              interaktiven Diagrammen.
+            </p>
+            <p><a href="http://marko-knoebl.github.io/kontobuch/">Website</a></p>
+          </div>
+        </wa-card>
+
+        <wa-card>
+          <img slot="media" src="../images/2048-3d-screenshot.png" alt="2048 3D" />
+          <div class="card-body">
+            <h3>2048 3D</h3>
+            <p>
+              Ein kleines Projekt, bei dem ich eine 3D-Version des Spiels 2048
+              erstellt habe.
+            </p>
+            <p><a href="http://marko-knoebl.github.io/2048-3D/">Website</a></p>
+          </div>
+        </wa-card>
+
+        <wa-card>
+          <img slot="media" src="../images/kubos-0.2-screenshot.png" alt="Kubos" />
+          <div class="card-body">
+            <h3>Kubos</h3>
+            <p>
+              Dieses einfache CAD-Programm habe ich im Rahmen meiner Magisterarbeit
+              erstellt. Es ist vorrangig fÃ¼r den Einsatz an Schulen gedacht. Dank
+              seines durchdachten Programmdesigns besteht es aus nur 4000 Zeilen an
+              Python Code.
+            </p>
+            <p><a href="http://sourceforge.net/p/kubos/wiki/Home/">Website</a></p>
+          </div>
+        </wa-card>
+
+        <wa-card>
+          <img slot="media" src="../images/screenshot_640x400.png" alt="Kubos Blocks" />
+          <div class="card-body">
+            <h3>Kubos Blocks</h3>
+            <p>
+              Ein web-basiertes Modellierprogramm, bei dem Objekte aus BlÃ¶cken
+              zusammengesetzt werden.
+            </p>
+            <p><a href="https://kubos.pythonanywhere.com/blocks">Website</a></p>
+          </div>
+        </wa-card>
+
+        <wa-card>
+          <img slot="media" src="../images/tetris-screenshot.png" alt="Tetr" />
+          <div class="card-body">
+            <h3>Tetr</h3>
+            <p>
+              Ein Tool zum Erstellen von web-basierten Tetris-Spielen. Bietet
+              verschiedenste anpassbare Grafikoptionen, von der textbasierten
+              Version aus 1984 zur 3D-Grafik.
+            </p>
+            <p><a href="https://github.com/marko-knoebl/tetr">Projektseite</a></p>
+          </div>
+        </wa-card>
       </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-3">
-    <div class="img-thumbnail mb-4">
-      <img class="img-fluid mb-4" src="images/kontobuch-piechart.png" />
-      <div class="caption m-2">
-        <h3>Kontobuch</h3>
-        <p>
-          Ein Finanzassitent, um Ausgaben und Einnahmen auf österreichischen
-          Bankkonten im Auge zu behalten
-        </p>
-        <p>
-          Kategorisiert Buchungen automatisch und visualisiert sie in
-          interaktiven Diagrammen
-        </p>
-        <p><a href="http://marko-knoebl.github.io/kontobuch/">Website</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="clearfix visible-sm"></div>
-  <div class="col-sm-6 col-md-3">
-    <div class="img-thumbnail mb-4">
-      <img class="img-fluid mb-4" src="images/2048-3d-screenshot.png" />
-      <div class="caption m-2">
-        <h3>2048 3D</h3>
-        <p>
-          Ein kleines Projekt, bei dem ich eine 3D-Version des Spiels 2048
-          erstellt habe
-        </p>
-        <p><a href="http://marko-knoebl.github.io/2048-3D/">Website</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-3">
-    <div class="img-thumbnail mb-4">
-      <img class="img-fluid mb-4" src="images/kubos-0.2-screenshot.png" />
-      <div class="caption m-2">
-        <h3>Kubos</h3>
-        <p>
-          Dieses einfache CAD-Programm habe ich im Rahmen meiner Magisterarbeit
-          erstellt. Es ist vorrangig für den Einsatz an Schulen gedacht. Dank
-          seines durchdachten Programmdesign besteht es aus nur 4000 Zeilen an
-          Python Code.
-        </p>
-        <p><a href="http://sourceforge.net/p/kubos/wiki/Home/">Website</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="clearfix"></div>
-  <div class="col-sm-6 col-md-3">
-    <div class="img-thumbnail mb-4">
-      <img class="img-fluid mb-4" src="images/screenshot_640x400.png" />
-      <div class="caption m-2">
-        <h3>Kubos Blocks</h3>
-        <p>
-          Ein web-basiertes Modellierprogramm, bei dem Objekte aus Blöcken
-          zusammengesetzt werden.
-        </p>
-        <p><a href="https://kubos.pythonanywhere.com/blocks">Website</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-3">
-    <div class="img-thumbnail mb-4">
-      <img class="img-fluid mb-4" src="images/tetris-screenshot.png" />
-      <div class="caption m-2">
-        <h3>Tetr</h3>
-        <p>
-          Ein Tool zum erstellen von web-basierten Tetris-Spielen. Bietet
-          vierschiedenste anpassbare Grafikoptionen, von der textbasierten
-          Version aus 1984 zur 3D-Grafik.
-        </p>
-        <p><a href="https://github.com/marko-knoebl/tetr">Projektseite</a></p>
-      </div>
-    </div>
-  </div>
-</div>
+    </main>
+  </body>
+</html>
