@@ -1,12 +1,5 @@
 website for Marko Knöbl
 
-created from these resources:
+built based on lit components and webawesome
 
-- pages
-- images
-- template.html
-- node_modules/@karuga/karuga-jsonresume
-
-deployment
-
-push to master to deploy; see vercel.com
+push to branch lit-wa to deploy via github pages
